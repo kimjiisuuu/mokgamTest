@@ -1,0 +1,25 @@
+from cospaces import *
+import math
+import random
+
+
+### 변수 ###
+girl = scene.get_item("Casual girl")
+dog = scene.get_item("Dog")
+
+### 함수 ###
+def girlClick():
+    girl.animation.play("Dance fun")
+    print("Casual girl클릭")
+
+def dogClick():
+    dog.animation.play("Bark")
+    print("dog클릭")
+
+
+
+### 이벤트 ###
+
+girl.input.on_click(girlClick)
+dog.input.on_click(dogClick)
+
